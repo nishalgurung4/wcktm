@@ -1,0 +1,14 @@
+@startuml
+class Animal {
+    +int noOfLeg
+    +void setNoOfLeg(int noOfLeg)
+}
+class Human {
+  +void walk()
+}
+class Cat {
+   +void walk()
+} 
+Animal <|-- Cat
+Animal <|--  Human
+@enduml

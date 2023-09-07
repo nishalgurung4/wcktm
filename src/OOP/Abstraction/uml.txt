@@ -1,0 +1,33 @@
+@startuml
+abstract Shape {
+ {abstract} +float area()
+ +void displayShapeType()
+}
+interface Drawable {
+{abstract} +void setColor(string color)
+{abstract} +void setPosition(float $x, float $y)
+{abstract} +void draw()
+}
+
+class Square {
+-float length
++float area()
++void setColor(string color)
++void setPosition(float $x, float $y)
++void draw()
+}
+
+class Rectangle {
+-float length
+-float width
++float area()
++void setColor(string color)
++void setPosition(float $x, float $y)
++void draw()
+}
+
+Shape <|-- Square
+Shape <|--  Rectangle
+Drawable <|-- Square
+Drawable <|-- Rectangle
+@enduml

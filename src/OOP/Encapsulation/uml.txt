@@ -1,0 +1,18 @@
+@startuml
+class Bike {
+  -float speed;
+  -isEngineStart;
+  -isClutchPress;
+  -gear;
+  -void startIgnition()
+  -void stopIgnition()
+  +void startEngine()
+  +void stopEngine()
+  +void pressBrake()
+  +void accelerate()
+  +void pressClutch()
+  +void releaseClutch()
+  +void shiftGear()
+  +void speed()
+}
+@enduml
