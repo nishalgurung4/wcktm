@@ -7,5 +7,7 @@ require __DIR__.'/vendor/autoload.php';
 $router = new \Bramus\Router\Router();
 
 
+//problem
+$router->get('problem', '\Nishal\Report\DemoController@handle');
 
 $router->run();
