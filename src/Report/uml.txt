@@ -1,0 +1,23 @@
+@startuml
+class Reporter {
+    +void generateBalanceSheet()
+}
+class FetchDatabase {
+   +array fetchDataFromDatabase()
+} 
+class FetchApi {
+   +array fetchDataFromApi()
+} 
+class ExportExcel {
+  +String exportToExcel()
+}
+class ExportPdf {
+  +String exportToPdf()
+}
+note top of Reporter : It dependes on four classes.
+
+Reporter --> FetchDatabase
+Reporter --> FetchApi
+Reporter --> ExportPdf
+Reporter --> ExportExcel
+@enduml
