@@ -1,0 +1,17 @@
+{
+    "name": "nishal/wcktm",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nishal\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nishal Gurung",
+            "email": "nishal.gurung4@outlook.com"
+        }
+    ],
+    "require": {}
+}
