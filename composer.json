@@ -5,7 +5,8 @@
     "autoload": {
         "psr-4": {
             "Nishal\\": "src/"
-        }
+        },
+        "files": ["helper.php"]
     },
     "authors": [
         {
