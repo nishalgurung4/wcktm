@@ -1,0 +1,13 @@
+@startuml
+abstract Animal {
+    +String makeSound()
+}
+class Dog {
+  +String makeSound()
+}
+class Cat {
+   +String makeSound()
+} 
+Animal <|-- Cat
+Animal <|--  Dog
+@enduml
