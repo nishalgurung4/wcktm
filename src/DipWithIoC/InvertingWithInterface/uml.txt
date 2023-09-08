@@ -1,6 +1,6 @@
 @startuml
 class Reporter {
-    +void generateBalanceSheet()
+    +void generateReport()
 }
 interface FetchData {
     +string fetch()

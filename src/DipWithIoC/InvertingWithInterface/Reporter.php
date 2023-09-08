@@ -6,7 +6,7 @@ class Reporter
     private $exportObj;
     private $fetchObj;
 
-    public function generateBalanceSheet($inputMethod, $outputMethod) 
+    public function generateReport($inputMethod, $outputMethod) 
     {
         //this is still a problem as this method is proned to change when the Export type and Fetch type added up
         // to fix it, we will use Inverting Object Creation
