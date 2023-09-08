@@ -1,0 +1,38 @@
+@startuml
+class ExportFactory {
+    {static} +void getExportObj(string type)
+}
+class FetchFactory {
+    {static} +void getFetchObj(string type)
+}
+class Reporter {
+    +void generateReport()
+}
+interface FetchData {
+    +string fetch()
+}
+class FetchDatabase {
+   +array fetch()
+} 
+class FetchApi {
+   +array fetch()
+} 
+interface ExportData {
+    +string export()
+}
+class ExportExcel {
+  +string export()
+}
+class ExportPdf {
+  +string export()
+}
+
+FetchFactory *-- Reporter
+ExportFactory *-- Reporter
+Reporter --> FetchData
+Reporter --> ExportData
+FetchData <|-- FetchDatabase
+FetchData <|-- FetchApi
+ExportData <|-- ExportExcel
+ExportData <|-- ExportPdf
+@enduml
