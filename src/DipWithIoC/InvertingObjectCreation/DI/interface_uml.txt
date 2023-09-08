@@ -1,0 +1,37 @@
+@startuml
+interface FetchAndExport {
+    {abstract} +void setFetchObj(FetchData fetchObj)
+    {abstract} +void setExportObj(ExportData exportObj)
+}
+class Reporter {
+    +void setFetchObj(FetchData fetchObj)
+    +void setExportObj(ExportData exportObj)
+    +void generateReport()
+}
+interface FetchData {
+    +string fetch()
+}
+class FetchDatabase {
+   +array fetch()
+} 
+class FetchApi {
+   +array fetch()
+} 
+interface ExportData {
+    +string export()
+}
+class ExportExcel {
+  +string export()
+}
+class ExportPdf {
+  +string export()
+}
+
+FetchAndExport <|-- Reporter
+Reporter --> FetchData
+Reporter --> ExportData
+FetchData <|-- FetchDatabase
+FetchData <|-- FetchApi
+ExportData <|-- ExportExcel
+ExportData <|-- ExportPdf
+@enduml
