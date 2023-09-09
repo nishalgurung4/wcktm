@@ -3,10 +3,10 @@ namespace Nishal\DipWithIoC\InvertingWithInterface;
 
 class Reporter 
 {
-    private $exportObj;
-    private $fetchObj;
+    private ExportData $exportObj;
+    private FetchData $fetchObj;
 
-    public function generateReport($inputMethod, $outputMethod) 
+    public function generateReport($inputMethod, $outputMethod):void
     {
         //this is still a problem as this method is proned to change when the Export type and Fetch type added up
         // to fix it, we will use Inverting Object Creation
