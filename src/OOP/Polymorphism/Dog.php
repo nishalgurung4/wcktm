@@ -3,8 +3,8 @@ namespace Nishal\OOP\Polymorphism;
 
 class Dog extends Animal
 {
-	public function makeSound()
+	public function makeSound():string
 	{
-		echo "Woof!";
+		return "Woof!";
 	}
 }

@@ -3,8 +3,8 @@ namespace Nishal\OOP\Polymorphism;
 
 class Cat extends Animal
 {
-	public function makeSound()
+	public function makeSound():string
 	{
-		echo "Meow!";
+		return "Meow!";
 	}
 }

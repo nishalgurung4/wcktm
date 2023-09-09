@@ -3,6 +3,6 @@ namespace Nishal\OOP\Polymorphism;
 
 abstract class Animal
 {
-	public abstract function makeSound();
+	public abstract function makeSound():string;
 
 }
