@@ -18,6 +18,11 @@ class ExportExcel {
 class ExportPdf {
   +String exportToPdf()
 }
+note as N1
+  Shit! We break Open Close principle
+  Class must be open for extension 
+  but closed for modification
+end note
 note top of Reporter : It dependes on four classes.
 
 Reporter --> FetchDatabase
