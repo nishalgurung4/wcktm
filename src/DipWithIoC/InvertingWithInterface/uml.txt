@@ -22,7 +22,7 @@ class ExportExcel {
 class ExportPdf {
   +string export()
 }
-
+note top of Reporter : Object creation dependency is still with the high-level module
 Reporter --> FetchData
 Reporter --> ExportData
 FetchData <|-- FetchDatabase
