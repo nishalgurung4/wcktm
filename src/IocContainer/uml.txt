@@ -18,6 +18,8 @@ package IoCContainer <<Rectangle>> {
 }
 
 class Reporter {
+    -FetchData fetchObj
+    -ExportData exportObj
     +Reporter(FetchData fetchObj, ExportData fetchObj)
     +void generateReport()
 }
@@ -40,6 +42,7 @@ class ExportPdf {
   +string export()
 }
 
+IoCContainer --> Reporter
 Reporter --> FetchData
 Reporter --> ExportData
 FetchData <|-- FetchDatabase

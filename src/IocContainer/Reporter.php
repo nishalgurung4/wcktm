@@ -10,11 +10,11 @@ class Reporter
 
     public function __construct(FetchData $fetchObj, ExportData $exportObj)
     {
-        $this->fetchObj = $fetchObj;
         $this->exportObj = $exportObj;
+        $this->fetchObj = $fetchObj;
     }
 
-    public function generateReport() 
+    public function generateReport():void 
     {
         echo $this->exportObj->export($this->fetchObj->fetch());
     }
