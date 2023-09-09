@@ -5,20 +5,20 @@ use Nishal\DipWithIoC\InvertingObjectCreation\DI\ExportData;
 
 class Reporter
 {
-    private $exportObj;
-    private $fetchObj;
+    private ExportData $exportObj;
+    private FetchData $fetchObj;
 
-    public function setFetchObj(FetchData $fetchObj)
+    public function setFetchObj(FetchData $fetchObj):void
     {
         $this->fetchObj = $fetchObj;
     }
 
-    public function setExportObj(ExportData $exportObj)
+    public function setExportObj(ExportData $exportObj):void
     {
         $this->exportObj = $exportObj;
     }
 
-    public function generateReport() 
+    public function generateReport():void 
     {
         echo $this->exportObj->export($this->fetchObj->fetch());
     }

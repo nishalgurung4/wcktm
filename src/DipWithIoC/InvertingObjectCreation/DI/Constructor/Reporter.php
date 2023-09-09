@@ -5,8 +5,8 @@ use Nishal\DipWithIoC\InvertingObjectCreation\DI\ExportData;
 
 class Reporter
 {
-    private $exportObj;
-    private $fetchObj;
+    private ExportData $exportObj;
+    private FetchData $fetchObj;
 
     public function __construct(FetchData $fetchObj, ExportData $exportObj)
     {
@@ -14,7 +14,7 @@ class Reporter
         $this->exportObj = $exportObj;
     }
 
-    public function generateReport() 
+    public function generateReport():void
     {
         echo $this->exportObj->export($this->fetchObj->fetch());
     }

@@ -5,7 +5,7 @@ use Nishal\DipWithIoC\InvertingObjectCreation\DI\ExportData;
 
 interface FetchAndExport
 {
-    public function setFetchObj(FetchData $fetchObj);
+    public function setFetchObj(FetchData $fetchObj):void;
 
-    public function setExportObj(ExportData $exportObj);
+    public function setExportObj(ExportData $exportObj):void;
 }

@@ -3,7 +3,7 @@ namespace Nishal\DipWithIoC\InvertingObjectCreation\DI;
 
 class FetchApi implements FetchData
 {
-    public function fetch() 
+    public function fetch():array 
     {
         // Logic to call the api and fetch the data
         return [

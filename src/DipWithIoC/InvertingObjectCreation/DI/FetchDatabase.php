@@ -3,7 +3,7 @@ namespace Nishal\DipWithIoC\InvertingObjectCreation\DI;
 
 class FetchDatabase implements FetchData
 {
-    public function fetch()
+    public function fetch():array
     {
         // Logic to connect to the database, execute a query, and fetch the data
         return [

@@ -1,5 +1,7 @@
 @startuml
 class Reporter {
+    -FetchData fetchObj
+    -ExportData exportObj
     +void setFetchObj(FetchData fetchObj)
     +void setExportObj(ExportData exportObj)
     +void generateReport()

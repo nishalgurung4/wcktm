@@ -4,6 +4,8 @@ interface FetchAndExport {
     {abstract} +void setExportObj(ExportData exportObj)
 }
 class Reporter {
+    -FetchData fetchObj
+    -ExportData exportObj
     +void setFetchObj(FetchData fetchObj)
     +void setExportObj(ExportData exportObj)
     +void generateReport()

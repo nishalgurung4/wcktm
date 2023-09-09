@@ -5,7 +5,7 @@ use Nishal\DipWithIoC\InvertingObjectCreation\DI\Setter\Reporter as ReporterSett
 use Nishal\DipWithIoC\InvertingObjectCreation\DI\Interface\Reporter as ReporterInterface;
 class DemoController
 {
-    public function handle($inputMethod, $outputMethod)
+    public function handle($inputMethod, $outputMethod):void
     {
         if ($inputMethod == 'db') {
             $fetchObj = new FetchDatabase();

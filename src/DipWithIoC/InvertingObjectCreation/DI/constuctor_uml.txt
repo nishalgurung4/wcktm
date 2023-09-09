@@ -1,6 +1,8 @@
 @startuml
 class Reporter {
-    +void Reporter(FetchData fetchObj, ExportData fetchObj)
+    +FetchData fetchObj
+    +ExportData exportObj
+    + Reporter(FetchData fetchObj, ExportData fetchObj)
     +void generateReport()
 }
 interface FetchData {
