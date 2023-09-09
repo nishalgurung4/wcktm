@@ -10,6 +10,9 @@ class FetchDatabase {
 class ExportExcel {
   +String exportToExcel()
 }
+note as N1
+  Yeah! We achieved Single Responsibility Principle :)
+end note
 note top of Reporter : It dependes on two classes.
 
 Reporter --> FetchDatabase
