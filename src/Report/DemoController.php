@@ -3,10 +3,10 @@ namespace Nishal\Report;
 
 class DemoController
 {
-    public function handle($inputMethod, $outputMethod)
+    public function handle($inputMethod, $outputMethod):void
     {
         $reporter = new Reporter();
-        $reporter->generateBalanceSheet($inputMethod, $outputMethod);
+        $reporter->generateReport($inputMethod, $outputMethod);
     }
 
 }

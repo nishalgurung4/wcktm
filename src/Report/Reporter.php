@@ -3,12 +3,12 @@ namespace Nishal\Report;
 
 class Reporter 
 {
-    private $exportExcelObj;
-    private $fetchDatabaseObj;
-    private $exportPdfObj;
-    private $fetchApiObj;
+    private ExportExcel $exportExcelObj;
+    private FetchDatabase $fetchDatabaseObj;
+    private ExportPDF $exportPdfObj;
+    private FetchApi $fetchApiObj;
 
-    public function generateBalanceSheet($inputMethod, $outputMethod):void 
+    public function generateReport($inputMethod, $outputMethod):void 
     {
         // 1. Instantiate the low-level module object.
         if ($inputMethod == 'db') {
