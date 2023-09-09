@@ -1,6 +1,8 @@
 @startuml
 class Reporter {
-    +void generateBalanceSheet()
+    +ExportExcel exportExcelObj
+    +FetchDatabase fetchDatabaseObj
+    +void generateReport()
 }
 class FetchDatabase {
    +array fetchDataFromDatabase()

@@ -7,7 +7,7 @@ class DemoController
     public function handle()
     {
         $reporter = new Reporter();
-        $reporter->generateBalanceSheet();
+        $reporter->generateReport();
     }
 
 }

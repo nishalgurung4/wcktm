@@ -3,8 +3,8 @@ namespace Nishal\Report;
 
 class Reporter 
 {
-    private $exportExcelObj;
-    private $fetchDatabaseObj;
+    private ExportExcel $exportExcelObj;
+    private FetchDatabase $fetchDatabaseObj;
 
     public function __construct() 
     {
@@ -12,7 +12,7 @@ class Reporter
         $this->fetchDatabaseObj = new FetchDatabase();
     }
 
-    public function generateBalanceSheet():void 
+    public function generateReport():void 
     {
         $dataFromDB = $this->fetchDatabaseObj->fetchDataFromDatabase();
         echo ($this->exportExcelObj->exportToExcel($dataFromDB));
