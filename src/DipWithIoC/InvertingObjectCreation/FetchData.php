@@ -3,5 +3,5 @@ namespace Nishal\DipWithIoC\InvertingObjectCreation;
 
 interface FetchData
 {
-    public function fetch();
+    public function fetch():array;
 }

@@ -4,7 +4,7 @@ use Nishal\DipWithIoC\InvertingObjectCreation\FetchDatabase;
 use Nishal\DipWithIoC\InvertingObjectCreation\FetchApi;
 class FetchFactory
 {
-    public static function getFetchObj($type)
+    public static function getFetchObj($type):FetchData
     {
         $fetchObj = null;
         if (strcasecmp("db", $type) === 0) {

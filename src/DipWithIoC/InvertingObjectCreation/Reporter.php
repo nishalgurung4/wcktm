@@ -5,15 +5,15 @@ use Nishal\DipWithIoC\InvertingObjectCreation\Factory\ExportFactory;
 
 class Reporter
 {
-    private $exportObj;
-    private $fetchObj;
+    private ExportData $exportObj;
+    private FetchData $fetchObj;
 
-    public function configureFetchData($type):void
+    public function configureFetchData(FetchData $type):void
     {
         $this->fetchObj = FetchFactory::getFetchObj($type);
     }
 
-    public function configureExport($type):void
+    public function configureExport(ExportData $type):void
     {
         $this->exportObj = ExportFactory::getExportObj($type);
     }

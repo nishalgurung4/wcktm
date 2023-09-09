@@ -1,11 +1,13 @@
 @startuml
 class ExportFactory {
-    {static} +void getExportObj(string type)
+    {static} +ExportData getExportObj(string type)
 }
 class FetchFactory {
-    {static} +void getFetchObj(string type)
+    {static} +FetchData getFetchObj(string type)
 }
 class Reporter {
+    +void configureFetchData(FetchData type)
+    +void configureExport(ExportData type)
     +void generateReport()
 }
 interface FetchData {

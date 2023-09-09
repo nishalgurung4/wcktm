@@ -5,7 +5,7 @@ use Nishal\DipWithIoC\InvertingObjectCreation\ExportExcel;
 
 class ExportFactory
 {
-    public static function getExportObj($type)
+    public static function getExportObj($type):ExportData
     {
         $exportObj = null;
 
