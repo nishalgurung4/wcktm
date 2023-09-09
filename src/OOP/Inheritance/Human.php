@@ -3,7 +3,7 @@ namespace Nishal\OOP\Inheritance;
 
 class Human extends Animal
 {
-	public function walk()
+	public function walk():void
 	{
 		$this->setNoOfLeg(2);
 

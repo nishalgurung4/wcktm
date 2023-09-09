@@ -3,7 +3,7 @@ namespace Nishal\OOP\Inheritance;
 
 class DemoController
 {
-	public function handle()
+	public function handle():void
     {
         //cat
         $kitty = new Cat();

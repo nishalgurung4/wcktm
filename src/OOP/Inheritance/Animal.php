@@ -5,7 +5,7 @@ class Animal
 {
 	public int $noOfLeg;
 
-	public function setNoOfLeg(int $noOfLeg)
+	public function setNoOfLeg(int $noOfLeg):void
 	{
 		$this->noOfLeg = $noOfLeg;
 	}
